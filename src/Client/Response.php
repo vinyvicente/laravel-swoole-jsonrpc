@@ -2,9 +2,6 @@
 
 namespace VinyVicente\JsonRpc\Client;
 
-use VinyVicente\JsonRpc\Exceptions\InvalidResponseException;
-use VinyVicente\JsonRpc\Server\Request;
-
 class Response
 {
     /**
