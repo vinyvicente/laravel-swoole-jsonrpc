@@ -1,0 +1,37 @@
+{
+    "name": "vinyvicente/laravel-swoole-jsonrpc",
+    "description": "JSON-RPC Server and Client based on Swoole, for Laravel/Lumen Framework 5 and Laravel 6 soon.",
+    "keywords": ["jsonrpc", "json-rpc", "rpc", "json", "laravel", "lumen", "swoole", "php"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vinicius Vicente",
+            "email": "vinyvicente@gmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/console": "5.8.* | 6.*",
+        "illuminate/contracts": "5.8.* | 6.*",
+        "illuminate/pipeline": "5.8.* | 6.*",
+        "illuminate/routing": "5.8.* | 6.*",
+        "illuminate/support": "5.8.* | 6.*",
+        "ramsey/uuid": "3.*"
+    },
+    "require-dev": {
+        "laravel/framework": "5.8.* | 6.*",
+        "laravel/lumen-framework": "5.8.* | 6.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "VinyVicente\\JsonRpc\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "VinyVicente\\JsonRpc\\ClientServiceProvider",
+                "VinyVicente\\JsonRpc\\ServerServiceProvider"
+            ]
+        }
+    }
+}
